@@ -9,6 +9,9 @@ jobs:
       - image: cimg/base:current
     steps:
       - run:
+          name: Run npm install
+          command: npm install
+      - run:
           name: Deploy to Render Staging
           command: |
             echo "Deploying to Render Staging"
